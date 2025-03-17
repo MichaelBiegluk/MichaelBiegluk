@@ -19,7 +19,7 @@ Welcome to my GitHub profile! I'm a passionate software developer with a love fo
 ![Michael Biegluk's GitHub stats](https://github-readme-stats.vercel.app/api?username=MichaelBiegluk&show_icons=true&theme=radical)
 
 ## 📫 How to reach me
-- **Email:** michael.biegluk@example.com
+- **Email:** macwater90@gmail.com
 - **LinkedIn:** [Michael Biegluk](https://www.linkedin.com/in/michaelbiegluk)
 - **Twitter:** [@MichaelBiegluk](https://twitter.com/MichaelBiegluk)
 
