@@ -1,0 +1,649 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "postgres-meta",
+    "description": "A REST API to manage your Postgres database",
+    "version": "0.0.0-automated"
+  },
+  "components": {
+    "schemas": {}
+  },
+  "paths": {
+    "/column-privileges/": {
+      "get": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "include_system_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "included_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "excluded_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "offset",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "pg",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "column_id": {
+                        "type": "string",
+                        "pattern": "^(\\d+)\\.(\\d+)$"
+                      },
+                      "relation_schema": {
+                        "type": "string"
+                      },
+                      "relation_name": {
+                        "type": "string"
+                      },
+                      "column_name": {
+                        "type": "string"
+                      },
+                      "privileges": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "grantor": {
+                              "type": "string"
+                            },
+                            "grantee": {
+                              "type": "string"
+                            },
+                            "privilege_type": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "SELECT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "INSERT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "UPDATE"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "REFERENCES"
+                                  ]
+                                }
+                              ]
+                            },
+                            "is_grantable": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": [
+                            "grantor",
+                            "grantee",
+                            "privilege_type",
+                            "is_grantable"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "column_id",
+                      "relation_schema",
+                      "relation_name",
+                      "column_name",
+                      "privileges"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "column_id": {
+                      "type": "string",
+                      "pattern": "^(\\d+)\\.(\\d+)$"
+                    },
+                    "grantee": {
+                      "type": "string"
+                    },
+                    "privilege_type": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "ALL"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "SELECT"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "INSERT"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "UPDATE"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "REFERENCES"
+                          ]
+                        }
+                      ]
+                    },
+                    "is_grantable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "column_id",
+                    "grantee",
+                    "privilege_type"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "pg",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "column_id": {
+                        "type": "string",
+                        "pattern": "^(\\d+)\\.(\\d+)$"
+                      },
+                      "relation_schema": {
+                        "type": "string"
+                      },
+                      "relation_name": {
+                        "type": "string"
+                      },
+                      "column_name": {
+                        "type": "string"
+                      },
+                      "privileges": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "grantor": {
+                              "type": "string"
+                            },
+                            "grantee": {
+                              "type": "string"
+                            },
+                            "privilege_type": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "SELECT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "INSERT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "UPDATE"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "REFERENCES"
+                                  ]
+                                }
+                              ]
+                            },
+                            "is_grantable": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": [
+                            "grantor",
+                            "grantee",
+                            "privilege_type",
+                            "is_grantable"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "column_id",
+                      "relation_schema",
+                      "relation_name",
+                      "column_name",
+                      "privileges"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "column_id": {
+                      "type": "string",
+                      "pattern": "^(\\d+)\\.(\\d+)$"
+                    },
+                    "grantee": {
+                      "type": "string"
+                    },
+                    "privilege_type": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "ALL"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "SELECT"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "INSERT"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "UPDATE"
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "REFERENCES"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "column_id",
+                    "grantee",
+                    "privilege_type"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "pg",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "column_id": {
+                        "type": "string",
+                        "pattern": "^(\\d+)\\.(\\d+)$"
+                      },
+                      "relation_schema": {
+                        "type": "string"
+                      },
+                      "relation_name": {
+                        "type": "string"
+                      },
+                      "column_name": {
+                        "type": "string"
+                      },
+                      "privileges": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "grantor": {
+                              "type": "string"
+                            },
+                            "grantee": {
+                              "type": "string"
+                            },
+                            "privilege_type": {
+                              "anyOf": [
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "SELECT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "INSERT"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "UPDATE"
+                                  ]
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "REFERENCES"
+                                  ]
+                                }
+                              ]
+                            },
+                            "is_grantable": {
+                              "type": "boolean"
+                            }
+                          },
+                          "required": [
+                            "grantor",
+                            "grantee",
+                            "privilege_type",
+                            "is_grantable"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "column_id",
+                      "relation_schema",
+                      "relation_name",
+                      "column_name",
+                      "privileges"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/columns/": {
+      "get": {
+        "parameters": [
+          {
+            "schema": {
+              "type": "boolean"
+            },
+            "in": "query",
+            "name": "include_system_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "included_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "excluded_schemas",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "integer"
+            },
+            "in": "query",
+            "name": "offset",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "pg",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "table_id": {
+                        "type": "integer"
+                      },
+                      "schema": {
+                        "type": "string"
+                      },
+                      "table": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string",
+                        "pattern": "^(\\d+)\\.(\\d+)$"
+                      },
+                      "ordinal_position": {
+                        "type": "integer"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "default_value": {},
+                      "data_type": {
+                        "type": "string"
+                      },
+                      "format": {
+                        "type": "string"
+                      },
+                      "is_identity": {
+                        "type": "boolean"
+                      },
+                      "identity_generation": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "enum": [
+                              "ALWAYS"
+                            ]
+                          },
+                          {
+                            "type": "strin
