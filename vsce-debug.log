@@ -1,0 +1,373 @@
+[debug] [2025-05-17T08:38:16.867Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-17T08:38:20.527Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-17T08:38:20.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-17T08:38:20.566Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50001
+[info] i  dataconnect: downloading dataconnect-emulator-2.6.1... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.6.1..."}}
+[debug] [2025-05-17T08:38:21.440Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v2.6.1 
+[debug] [2025-05-17T08:38:21.639Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v2.6.1 200
+[debug] [2025-05-17T08:38:21.640Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-linux-v2.6.1 [stream]
+[debug] [2025-05-17T08:38:23.120Z] I0517 08:38:23.096003    2297 control.go:73] [/emulator/fdc-quickstart-web 971b] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.096003    2297 control.go:73] [/emulator/fdc-quickstart-web 971b] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-17T08:38:23.122Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-17T08:38:23.123Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-17T08:38:23.123Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-17T08:38:23.143Z] I0517 08:38:23.143045    2307 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.143045    2307 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-17T08:38:23.192Z] I0517 08:38:23.192773    2307 control.go:73] [/emulator/fdc-quickstart-web 8124] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.192773    2307 control.go:73] [/emulator/fdc-quickstart-web 8124] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-17T08:38:23.243Z] I0517 08:38:23.243519    2307 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.243519    2307 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-17T08:38:23.254Z] I0517 08:38:23.254377    2307 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.254377    2307 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] \n"}}
+[debug] [2025-05-17T08:38:23.255Z] I0517 08:38:23.254961    2307 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] index.d.ts [13885B] esm/index.esm.js [5123B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.254961    2307 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] index.d.ts [13885B] esm/index.esm.js [5123B] \n"}}
+[debug] [2025-05-17T08:38:23.256Z] I0517 08:38:23.255871    2307 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0517 08:38:23.255906    2307 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.255871    2307 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0517 08:38:23.255906    2307 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-17T08:38:23.260Z] I0517 08:38:23.257392    2307 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.257392    2307 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-17T08:38:23.355Z] I0517 08:38:23.355612    2307 engine.go:170] [/emulator/fdc-quickstart-web 8124] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0517 08:38:23.355612    2307 engine.go:170] [/emulator/fdc-quickstart-web 8124] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-05-17T08:38:59.019Z] Running auto auth
+[debug] [2025-05-17T08:38:59.032Z] No OAuth tokens found
+[debug] [2025-05-17T08:38:59.033Z] [Firebase Plugin] User found:  macwater90@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-17T08:38:59.034Z] No OAuth tokens found
+[debug] [2025-05-17T08:38:59.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-17T08:38:59.499Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-05-17T08:38:59.499Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-19T15:17:11.588Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-19T15:17:14.972Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-19T15:17:14.973Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-19T15:17:15.005Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50001
+[debug] [2025-05-19T15:17:18.090Z] I0519 15:17:18.059665     470 control.go:73] [/emulator/fdc-quickstart-web 7abc] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.059665     470 control.go:73] [/emulator/fdc-quickstart-web 7abc] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-19T15:17:18.091Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-19T15:17:18.092Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-19T15:17:18.092Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-19T15:17:18.118Z] Running auto auth
+[debug] [2025-05-19T15:17:18.187Z] No OAuth tokens found
+[debug] [2025-05-19T15:17:18.200Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-19T15:17:18.203Z] No OAuth tokens found
+[debug] [2025-05-19T15:17:18.204Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-19T15:17:18.243Z] I0519 15:17:18.131372     489 load.go:37] Reloading schema and connectors...
+I0519 15:17:18.207788     489 control.go:73] [/emulator/fdc-quickstart-web 8164] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.131372     489 load.go:37] Reloading schema and connectors...\nI0519 15:17:18.207788     489 control.go:73] [/emulator/fdc-quickstart-web 8164] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-19T15:17:18.264Z] I0519 15:17:18.254081     489 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+I0519 15:17:18.263845     489 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] prelude.gql [71531B] main/query.gql [8831B] main/mutation.gql [23905B] 
+I0519 15:17:18.264168     489 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.254081     489 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nI0519 15:17:18.263845     489 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] prelude.gql [71531B] main/query.gql [8831B] main/mutation.gql [23905B] \nI0519 15:17:18.264168     489 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \n"}}
+[debug] [2025-05-19T15:17:18.265Z] I0519 15:17:18.264669     489 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0519 15:17:18.264695     489 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.264669     489 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0519 15:17:18.264695     489 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-19T15:17:18.308Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-19T15:17:18.309Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-19T15:17:18.310Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[debug] [2025-05-19T15:17:18.319Z] I0519 15:17:18.319639     489 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.319639     489 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-19T15:17:18.363Z] I0519 15:17:18.363485     489 engine.go:170] [/emulator/fdc-quickstart-web 8164] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:17:18.363485     489 engine.go:170] [/emulator/fdc-quickstart-web 8164] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-05-19T15:19:52.208Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-19T15:19:54.907Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-19T15:19:54.908Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-19T15:19:54.909Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-19T15:19:54.913Z] No OAuth tokens found
+[debug] [2025-05-19T15:19:54.913Z] No OAuth tokens found
+[debug] [2025-05-19T15:19:54.914Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-19T15:19:54.914Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-19T15:19:54.915Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-19T15:19:54.917Z] No OAuth tokens found
+[debug] [2025-05-19T15:19:54.918Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-19T15:19:54.952Z] [Firebase Plugin] VSCode notification server listening on port 40002
+[debug] [2025-05-19T15:19:55.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-19T15:19:55.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-19T15:19:55.034Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50002
+[debug] [2025-05-19T15:19:55.591Z] I0519 15:19:55.572273    1222 control.go:73] [/emulator/fdc-quickstart-web aa9b] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.572273    1222 control.go:73] [/emulator/fdc-quickstart-web aa9b] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-19T15:19:55.592Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-19T15:19:55.592Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-19T15:19:55.593Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50002","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50002\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-19T15:19:55.639Z] I0519 15:19:55.610977    1232 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.610977    1232 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-19T15:19:55.676Z] I0519 15:19:55.665944    1232 control.go:73] [/emulator/fdc-quickstart-web 6171] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.665944    1232 control.go:73] [/emulator/fdc-quickstart-web 6171] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-19T15:19:55.708Z] I0519 15:19:55.708417    1232 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.708417    1232 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-19T15:19:55.718Z] I0519 15:19:55.718325    1232 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.718325    1232 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] \n"}}
+[debug] [2025-05-19T15:19:55.722Z] I0519 15:19:55.720676    1232 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+I0519 15:19:55.721205    1232 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0519 15:19:55.721231    1232 load.go:115] Finished reloading
+I0519 15:19:55.721609    1232 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.720676    1232 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \nI0519 15:19:55.721205    1232 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0519 15:19:55.721231    1232 load.go:115] Finished reloading\nI0519 15:19:55.721609    1232 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002\n"}}
+[debug] [2025-05-19T15:19:55.871Z] I0519 15:19:55.871411    1232 engine.go:170] [/emulator/fdc-quickstart-web 6171] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0519 15:19:55.871411    1232 engine.go:170] [/emulator/fdc-quickstart-web 6171] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[info] [Firebase Plugin] Stopping Data Connect toolkit
+[warn] ⚠  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[debug] [2025-05-25T02:10:41.231Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-25T02:10:45.213Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T02:10:45.214Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T02:10:45.254Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50001
+[debug] [2025-05-25T02:10:48.917Z] I0525 02:10:48.879458     468 control.go:73] [/emulator/fdc-quickstart-web b241] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:48.879458     468 control.go:73] [/emulator/fdc-quickstart-web b241] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T02:10:48.918Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-25T02:10:48.919Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-25T02:10:48.919Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-25T02:10:48.941Z] I0525 02:10:48.940502     494 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:48.940502     494 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-25T02:10:48.947Z] Running auto auth
+[debug] [2025-05-25T02:10:49.010Z] No OAuth tokens found
+[debug] [2025-05-25T02:10:49.010Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T02:10:49.012Z] No OAuth tokens found
+[debug] [2025-05-25T02:10:49.014Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T02:10:49.053Z] I0525 02:10:48.992255     494 control.go:73] [/emulator/fdc-quickstart-web 2edf] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+I0525 02:10:49.047607     494 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:48.992255     494 control.go:73] [/emulator/fdc-quickstart-web 2edf] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \nI0525 02:10:49.047607     494 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-25T02:10:49.079Z] I0525 02:10:49.062747     494 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] 
+I0525 02:10:49.063384     494 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+I0525 02:10:49.064048     494 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0525 02:10:49.064079     494 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:49.062747     494 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] \nI0525 02:10:49.063384     494 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \nI0525 02:10:49.064048     494 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0525 02:10:49.064079     494 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-25T02:10:49.085Z] I0525 02:10:49.083008     494 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:49.083008     494 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-25T02:10:49.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T02:10:49.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T02:10:49.139Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[debug] [2025-05-25T02:10:49.171Z] I0525 02:10:49.170942     494 engine.go:170] [/emulator/fdc-quickstart-web 2edf] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:10:49.170942     494 engine.go:170] [/emulator/fdc-quickstart-web 2edf] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-05-25T02:14:25.515Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-25T02:14:28.784Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T02:14:28.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T02:14:28.786Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T02:14:28.789Z] No OAuth tokens found
+[debug] [2025-05-25T02:14:28.790Z] No OAuth tokens found
+[debug] [2025-05-25T02:14:28.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T02:14:28.791Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T02:14:28.791Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T02:14:28.792Z] No OAuth tokens found
+[debug] [2025-05-25T02:14:28.794Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T02:14:28.856Z] [Firebase Plugin] VSCode notification server listening on port 40002
+[debug] [2025-05-25T02:14:28.967Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T02:14:28.968Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T02:14:28.969Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50002
+[debug] [2025-05-25T02:14:29.957Z] I0525 02:14:29.932885    1462 control.go:73] [/emulator/fdc-quickstart-web b0eb] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/queries.gql [6315B] movie-connector/mutations.gql [2673B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:29.932885    1462 control.go:73] [/emulator/fdc-quickstart-web b0eb] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/queries.gql [6315B] movie-connector/mutations.gql [2673B] \n"}}
+[debug] [2025-05-25T02:14:29.979Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-25T02:14:29.979Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-25T02:14:29.980Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50002","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50002\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-25T02:14:30.007Z] I0525 02:14:30.004053    1472 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.004053    1472 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-25T02:14:30.054Z] I0525 02:14:30.054469    1472 control.go:73] [/emulator/fdc-quickstart-web 6539] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/queries.gql [6315B] movie-connector/mutations.gql [2673B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.054469    1472 control.go:73] [/emulator/fdc-quickstart-web 6539] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/queries.gql [6315B] movie-connector/mutations.gql [2673B] \n"}}
+[debug] [2025-05-25T02:14:30.113Z] I0525 02:14:30.113616    1472 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.113616    1472 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-25T02:14:30.126Z] I0525 02:14:30.126432    1472 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.126432    1472 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] \n"}}
+[debug] [2025-05-25T02:14:30.130Z] I0525 02:14:30.128801    1472 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: README.md [59731B] index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] 
+I0525 02:14:30.129561    1472 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0525 02:14:30.129597    1472 load.go:115] Finished reloading
+I0525 02:14:30.130048    1472 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.128801    1472 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: README.md [59731B] index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] \nI0525 02:14:30.129561    1472 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0525 02:14:30.129597    1472 load.go:115] Finished reloading\nI0525 02:14:30.130048    1472 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002\n"}}
+[debug] [2025-05-25T02:14:30.241Z] I0525 02:14:30.239797    1472 engine.go:170] [/emulator/fdc-quickstart-web 6539] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:14:30.239797    1472 engine.go:170] [/emulator/fdc-quickstart-web 6539] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[info] [Firebase Plugin] Stopping Data Connect toolkit
+[warn] ⚠  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[debug] [2025-05-25T02:20:52.124Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-25T02:20:55.456Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T02:20:55.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T02:20:55.458Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T02:20:55.462Z] No OAuth tokens found
+[debug] [2025-05-25T02:20:55.463Z] No OAuth tokens found
+[debug] [2025-05-25T02:20:55.463Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T02:20:55.463Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T02:20:55.464Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T02:20:55.465Z] No OAuth tokens found
+[debug] [2025-05-25T02:20:55.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T02:20:55.530Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[debug] [2025-05-25T02:20:55.622Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T02:20:55.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T02:20:55.624Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50001
+[debug] [2025-05-25T02:20:56.499Z] I0525 02:20:56.472279    3939 control.go:73] [/emulator/fdc-quickstart-web b1fe] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.472279    3939 control.go:73] [/emulator/fdc-quickstart-web b1fe] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T02:20:56.500Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-25T02:20:56.500Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-25T02:20:56.501Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-25T02:20:56.541Z] I0525 02:20:56.524205    3950 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.524205    3950 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-25T02:20:56.583Z] I0525 02:20:56.583363    3950 control.go:73] [/emulator/fdc-quickstart-web 11da] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.583363    3950 control.go:73] [/emulator/fdc-quickstart-web 11da] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T02:20:56.634Z] I0525 02:20:56.633837    3950 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.633837    3950 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-25T02:20:56.653Z] I0525 02:20:56.652923    3950 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] main/input.gql [41706B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.652923    3950 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] main/implicit.gql [2031B] main/input.gql [41706B] \n"}}
+[debug] [2025-05-25T02:20:56.658Z] I0525 02:20:56.655445    3950 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+I0525 02:20:56.656135    3950 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0525 02:20:56.656174    3950 load.go:115] Finished reloading
+I0525 02:20:56.656715    3950 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.655445    3950 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \nI0525 02:20:56.656135    3950 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0525 02:20:56.656174    3950 load.go:115] Finished reloading\nI0525 02:20:56.656715    3950 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-25T02:20:56.741Z] I0525 02:20:56.741040    3950 engine.go:170] [/emulator/fdc-quickstart-web 11da] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 02:20:56.741040    3950 engine.go:170] [/emulator/fdc-quickstart-web 11da] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[info] [Firebase Plugin] Stopping Data Connect toolkit
+[warn] ⚠  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[debug] [2025-05-25T19:18:51.171Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-25T19:18:55.041Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T19:18:55.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T19:18:55.058Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50001
+[debug] [2025-05-25T19:18:59.199Z] I0525 19:18:59.164909     442 control.go:73] [/emulator/fdc-quickstart-web 2484] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:18:59.164909     442 control.go:73] [/emulator/fdc-quickstart-web 2484] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T19:18:59.201Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-25T19:18:59.201Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-25T19:18:59.202Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-25T19:18:59.247Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: true
+[debug] [2025-05-25T19:18:59.248Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T19:18:59.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T19:18:59.249Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: true
+[debug] [2025-05-25T19:18:59.250Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T19:18:59.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T19:18:59.255Z] I0525 19:18:59.223750     458 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:18:59.223750     458 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-25T19:18:59.287Z] Running auto auth
+[debug] [2025-05-25T19:18:59.288Z] Running auto auth
+[debug] [2025-05-25T19:18:59.288Z] Running auto auth
+[debug] [2025-05-25T19:18:59.291Z] I0525 19:18:59.274778     458 control.go:73] [/emulator/fdc-quickstart-web 91db] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:18:59.274778     458 control.go:73] [/emulator/fdc-quickstart-web 91db] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T19:18:59.392Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.392Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T19:18:59.394Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.395Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T19:18:59.476Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.477Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T19:18:59.478Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T19:18:59.561Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.561Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T19:18:59.562Z] No OAuth tokens found
+[debug] [2025-05-25T19:18:59.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T19:18:59.598Z] I0525 19:18:59.327618     458 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+I0525 19:18:59.358981     458 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] 
+I0525 19:18:59.384089     458 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+I0525 19:18:59.384915     458 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0525 19:18:59.384953     458 load.go:115] Finished reloading
+I0525 19:18:59.405645     458 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:18:59.327618     458 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nI0525 19:18:59.358981     458 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] main/mutation.gql [23905B] \nI0525 19:18:59.384089     458 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \nI0525 19:18:59.384915     458 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0525 19:18:59.384953     458 load.go:115] Finished reloading\nI0525 19:18:59.405645     458 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2025-05-25T19:18:59.690Z] I0525 19:18:59.689875     458 engine.go:170] [/emulator/fdc-quickstart-web 91db] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:18:59.689875     458 engine.go:170] [/emulator/fdc-quickstart-web 91db] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2025-05-25T19:18:59.703Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T19:18:59.703Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T19:18:59.704Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[debug] [2025-05-25T19:18:59.724Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T19:18:59.724Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T19:18:59.725Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[debug] [2025-05-25T19:18:59.727Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T19:18:59.727Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T19:18:59.727Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[debug] [2025-05-25T19:22:10.336Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2025-05-25T19:22:13.516Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2025-05-25T19:22:13.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T19:22:13.518Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T19:22:13.521Z] No OAuth tokens found
+[debug] [2025-05-25T19:22:13.522Z] No OAuth tokens found
+[debug] [2025-05-25T19:22:13.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-25T19:22:13.523Z] > authorizing via signed-in user (id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com)
+[debug] [2025-05-25T19:22:13.523Z] [Firebase Plugin] User found:  id-monospace-workstations-sa@monospace-9.iam.gserviceaccount.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2025-05-25T19:22:13.525Z] No OAuth tokens found
+[debug] [2025-05-25T19:22:13.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-05-25T19:22:13.567Z] [Firebase Plugin] VSCode notification server listening on port 40002
+[debug] [2025-05-25T19:22:13.711Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
+[debug] [2025-05-25T19:22:13.712Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-05-25T19:22:13.713Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 403, Request had insufficient authentication scopes.
+[info] [Firebase Plugin] Starting Data Connect toolkit (version 2.6.1) on port 50002
+[debug] [2025-05-25T19:22:14.566Z] I0525 19:22:14.539655    1931 control.go:73] [/emulator/fdc-quickstart-web 0581] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.539655    1931 control.go:73] [/emulator/fdc-quickstart-web 0581] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T19:22:14.567Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-25T19:22:14.568Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-05-25T19:22:14.568Z] Starting Data Connect Emulator with command {"binary":"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50002","--config_dir=/home/user/firebasedataconnect/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/home/user/.cache/firebase/emulators/dataconnect-emulator-2.6.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50002\",\"--config_dir=/home/user/firebasedataconnect/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2025-05-25T19:22:14.623Z] I0525 19:22:14.586793    1941 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.586793    1941 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2025-05-25T19:22:14.666Z] I0525 19:22:14.647363    1941 control.go:73] [/emulator/fdc-quickstart-web b5cc] UpdateResources(): done
+Schema: sources: schema/schema.gql [2945B] 
+Connector "movie-connector": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.647363    1941 control.go:73] [/emulator/fdc-quickstart-web b5cc] UpdateResources(): done\nSchema: sources: schema/schema.gql [2945B] \nConnector \"movie-connector\": sources: movie-connector/mutations.gql [2673B] movie-connector/queries.gql [6315B] \n"}}
+[debug] [2025-05-25T19:22:14.695Z] I0525 19:22:14.695767    1941 codegen.go:82] [connector "movie-connector" javascriptSdk] Generating sources into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.695767    1941 codegen.go:82] [connector \"movie-connector\" javascriptSdk] Generating sources into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\n"}}
+[debug] [2025-05-25T19:22:14.706Z] I0525 19:22:14.706144    1941 collector.go:107] schema extensions wrote into "/home/user/firebasedataconnect/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [23905B] prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.706144    1941 collector.go:107] schema extensions wrote into \"/home/user/firebasedataconnect/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [23905B] prelude.gql [71531B] main/implicit.gql [2031B] main/input.gql [41706B] main/relation.gql [25933B] main/query.gql [8831B] \n"}}
+[debug] [2025-05-25T19:22:14.707Z] I0525 19:22:14.707744    1941 collector.go:107] connector "movie-connector" javascriptSdk wrote into "/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk"
+Generated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.707744    1941 collector.go:107] connector \"movie-connector\" javascriptSdk wrote into \"/home/user/firebasedataconnect/app/src/lib/dataconnect-sdk\"\nGenerated sources: index.d.ts [13885B] esm/index.esm.js [5123B] esm/package.json [17B] index.cjs.js [5869B] package.json [630B] README.md [59731B] \n"}}
+[debug] [2025-05-25T19:22:14.708Z] I0525 19:22:14.708562    1941 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation
+I0525 19:22:14.708596    1941 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.708562    1941 installsdk.go:49] Package @movie/dataconnect is already installed. Skipping installation\nI0525 19:22:14.708596    1941 load.go:115] Finished reloading\n"}}
+[debug] [2025-05-25T19:22:14.709Z] I0525 19:22:14.709055    1941 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.709055    1941 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50002\n"}}
+[debug] [2025-05-25T19:22:14.849Z] I0525 19:22:14.849401    1941 engine.go:170] [/emulator/fdc-quickstart-web b5cc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0525 19:22:14.849401    1941 engine.go:170] [/emulator/fdc-quickstart-web b5cc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
